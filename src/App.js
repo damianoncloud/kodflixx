@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './immagine-home.jpeg';
+import favMovie from './fav-movie-cover.jpg';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         >
           <button>Register</button> 
         </a>
+        <img src={favMovie} />
       </header>
     </div>
   );
