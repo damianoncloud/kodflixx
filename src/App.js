@@ -20,7 +20,7 @@ function App() {
         >
           <button>Register</button> 
         </a>
-        <img src={favMovie} />
+        <img src={favMovie} alt='favourite movie cover'/>
       </header>
     </div>
   );
