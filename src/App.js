@@ -10,7 +10,7 @@ function App() {
         <h2>
           Welcome to Koflix
         </h2>
-
+        <h4>Find your movie!</h4>
         <a
           className="App-link"
           href="https://reactjs.org"
