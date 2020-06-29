@@ -6,3 +6,13 @@ img {
   width: 50%;
 
 }
+
+.movie-container {
+  display: flex;
+}
+
+
+.item {
+  flex: 1;
+  padding: 30px;
+}
