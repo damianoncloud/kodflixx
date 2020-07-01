@@ -1,23 +1,40 @@
 import React from 'react';
-import logo from './immagine-home.jpeg';
-import favMovie from './fav-movie-cover.jpg';
+import bloodDiamond from './images/blood-diamonds-cover.jpg';
+import parasite from './images/parasite-cover.jpg';
+import enemy from './images/enemy-cover.jpg';
+import theory from './images/fav-movie-cover.jpg';
+import rocket from './images/rocketman.jpg';
+import knives from './images/knives.png';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
       <h1>Welcome to Kodflix</h1>
-      <img src={favMovie} alt='fav-image' />
       
       <div className="movie-container">
-        <div className="item">Black Diamonds</div>
-        <div className="item">Parasite</div>
-        <div className="item">Enemy of the State</div>
+        <div className="item">
+          <img src={bloodDiamond} alt='blook-diamond'/>
+        </div>
+        <div className="item">
+          <img src={parasite} alt='parasite'/>
+        </div>
+        <div className="item">
+          <img src={enemy} alt='enemy-of-state'/>
+        </div>
       </div>  
+
       <div className="movie-container">  
-        <div className="item">The Teory of everything</div>
-        <div className="item">Hitch</div>
-        <div className="item">Knives out</div>
+        <div className="item">
+          <img src={theory} alt='theory-of-everything'/>
+        </div>
+        <div className="item">
+          <img src={rocket} alt='rocketman'/>
+        </div>
+        <div className="item">
+          <img src={knives} alt='knives'/>
+        </div>
       </div>
       
 
