@@ -14,7 +14,25 @@ img {
 
 .item {
   flex: 1;
+  position: relative; 
+  border: 1px solid orange;
 }
+
+.overlay {
+  display: none;
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: blue;
+  opacity: .9;
+  color: white;
+}
+
+.item:hover .overlay {
+  display: block;
+}
+
 
 .item img {
   width: 230px;
