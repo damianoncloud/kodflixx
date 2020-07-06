@@ -1,4 +1,5 @@
 import React from 'react';
+import MovieElement from './movieElement.js';
 import bloodDiamond from './images/blood-diamonds-cover.jpg';
 import parasite from './images/parasite-cover.jpg';
 import enemy from './images/enemy-cover.jpg';
@@ -12,64 +13,22 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome to Kodflix</h1>
-      
-      <div className="movie-container">
-        <div className="item">
-          <img src={bloodDiamond} alt='blook-diamond'/>
-          <div class="overlay">
-            <h1 class="text">
-              Blood Diamond
-            </h1>
-          </div>
-        </div>
-        <div className="item">
-          <img src={parasite} alt='parasite'/>
-          <div class="overlay">
-            <h1 class="text">
-              Parasite
-            </h1>
-          </div>
-        </div>
-        <div className="item">
-          <img src={enemy} alt='enemy-of-state'/>
-          <div class="overlay">
-            <h1 class="text">
-              Enemy of the State 
-            </h1>
-          </div>
-        </div>
-      </div>  
 
-      <div className="movie-container">  
-        <div className="item">
-          <img src={theory} alt='theory-of-everything'/>
-          <div class="overlay">
-            <h1 class="text">
-              The Theory of everything
-            </h1>
-          </div>
-        </div>
-        <div className="item">
-          <img src={rocket} alt='rocketman'/>
-          <div class="overlay">
-            <h1 class="text">
-              Rocketman
-            </h1>
-          </div>
-        </div>
-        <div className="item">
-          <img src={knives} alt='knives'/>
-          <div class="overlay">
-            <h1 class="text">
-              Knives out
-            </h1>
-          </div>
-        </div>
+      <div className="movie-container">
+        <MovieElement name="Blood Diamond" image={bloodDiamond} />
+        <MovieElement name="Parasite" image={parasite} />
+        <MovieElement name="Enemy of the State" image={enemy} />
       </div>
-      
+
+      <div className="movie-container">
+        <MovieElement name="The Theory of Everything" image={theory} />
+        <MovieElement name="Rocketman" image={rocket} />
+        <MovieElement name="Knives out" image={knives} />
+      </div>
+
 
     </div>
   );
-}   
+}
 
 export default App;
