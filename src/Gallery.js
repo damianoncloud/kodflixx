@@ -12,15 +12,15 @@ export default function Gallery() {
     return (
       <div>
         <div className="movie-container">
-          <MovieElement name="Blood Diamond" image={bloodDiamond} />
-          <MovieElement name="Parasite" image={parasite} />
-          <MovieElement name="Enemy of the State" image={enemy} />
+          <MovieElement id='Blood' name="Blood Diamond" image={bloodDiamond} />
+          <MovieElement id='parasite' name="Parasite" image={parasite} />
+          <MovieElement id='Enemy' name="Enemy of the State" image={enemy} />
         </div>
   
         <div className="movie-container">
-          <MovieElement name="The Theory of Everything" image={theory} />
-          <MovieElement name="Rocketman" image={rocket} />
-          <MovieElement name="Knives out" image={knives} />
+          <MovieElement id='theory' name="The Theory of Everything" image={theory} />
+          <MovieElement id='rocketman' name="Rocketman" image={rocket} />
+          <MovieElement id='knives' name="Knives out" image={knives} />
         </div>
     </div>
     )
